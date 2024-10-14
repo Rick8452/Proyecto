@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:id="@+id/header_layout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <View
+                android:layout_width="0dp"
+                android:layout_height="10dp"
+                android:layout_weight="1"
+                android:background="#9575CD"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#9575CD">
+
+            <ImageButton
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:id="@+id/btn_menu"
+                android:src="@drawable/ic_menu"
+                android:background="#9575CD"
+                android:contentDescription="btn_menu"
+                android:layout_gravity="start|top"
+                android:layout_marginEnd="15dp"/>
+
+            <TextView
+                android:layout_width="290dp"
+                android:layout_height="48dp"
+                android:text="Añadir Producto"
+                android:textSize="30sp"
+                android:textStyle="italic"
+                android:textColor="@android:color/white"
+                android:gravity="center"
+                android:layout_marginBottom="0dp" />
+
+            <ImageButton
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:src="@drawable/carrito2"
+                android:id="@+id/carrito"
+                android:scaleType="fitCenter"
+                android:background="#9575CD"
+                android:contentDescription="btn_carrito"
+                android:layout_gravity="start|top"
+                android:layout_marginEnd="15dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#9575CD">
+            <View
+                android:layout_width="0dp"
+                android:layout_height="10dp"
+                android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/header_layout"
+        android:layout_marginTop="10dp"
+        tools:ignore="NotSibling">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <EditText
+                android:id="@+id/editTextNombreProducto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nombre del Producto"
+                android:inputType="text"
+                android:layout_marginBottom="16dp" />
+
+            <EditText
+                android:id="@+id/editTextMarca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Marca"
+                android:inputType="text"
+                android:layout_marginBottom="16dp" />
+
+            <EditText
+                android:id="@+id/editTextDescripcion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Descripción"
+                android:inputType="textMultiLine"
+                android:lines="4"
+                android:layout_marginBottom="16dp" />
+
+            <EditText
+                android:id="@+id/editTextPrecio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Precio"
+                android:inputType="numberDecimal"
+                android:layout_marginBottom="16dp" />
+
+            <EditText
+                android:id="@+id/editTextCantidad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Cantidad"
+                android:inputType="number"
+                android:layout_marginBottom="16dp" />
+
+            <ImageView
+                android:id="@+id/imageViewProducto"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/placeholder_image"
+                android:scaleType="centerCrop"
+                android:layout_marginBottom="16dp" />
+
+            <Button
+                android:id="@+id/buttonUploadImagen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cargar Imagen"
+                android:layout_marginBottom="16dp" />
+
+            <Button
+                android:id="@+id/buttonRegistrarProducto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Registrar Producto"
+                android:backgroundTint="#FF9800"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/rounded_corner"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="0dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

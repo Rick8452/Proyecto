@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "183989994438",
+    "firebase_url": "https://iswift-edf84-default-rtdb.firebaseio.com",
+    "project_id": "iswift-edf84",
+    "storage_bucket": "iswift-edf84.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:183989994438:android:09caeca95a6208550768c7",
+        "android_client_info": {
+          "package_name": "com.example.login_page_project"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "183989994438-p0iq8i95ndjooeod7eu6fnvbr3k2sq0m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.login_page_project",
+            "certificate_hash": "21da5d70b746432cb5b96d0616b78b88d2dcfed2"
+          }
+        },
+        {
+          "client_id": "183989994438-muo5ii9b05lfjfsui6p9os3fhgmhl9av.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCx4cfdPHvHm_D174tT7OzFEb3dvehJtZU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "183989994438-674m052dsuojpsgb10467o3qp7s627c9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
